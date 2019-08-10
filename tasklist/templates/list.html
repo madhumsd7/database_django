@@ -1,0 +1,40 @@
+{% load static %}
+<html>
+<head>
+ <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h1>THIS IS THE LIST</h1>
+
+
+<body id="body1">
+  
+  <form>
+    <table>
+     <tr>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>MOBILE NO</th>
+      <th>WORK</th>
+     </tr>
+     {%for l in record %}
+      <tr>
+      <td>{{l.name}}</td>
+      <td>{{l.email}}</td>
+      <td>{{l.mobile_number}}</td>
+      <td>{{l.work}}</td>
+     </tr>
+     {% endfor %}
+    
+    </table>
+  </form>
+
+
+</body>
+
+<a href="/">BACK TO DASHBOARD</a>
+
+</html>
+
+
+

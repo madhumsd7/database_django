@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(230, 140, 140);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  } 
+  th, td {
+    padding: 15px;
+  }
+#body1{
+    background-color: cyan;
+}
